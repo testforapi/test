@@ -6,7 +6,7 @@ function loadJSON(callback) {
 	//console.log(type[0] + " " + type[1]);
     var xobj = new XMLHttpRequest();
     	xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'https://testforapi.github.io/test/site/data.json', true); 
+    xobj.open('GET', 'data.json', true); 
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == "200") {
             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
