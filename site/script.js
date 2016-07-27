@@ -2,11 +2,11 @@ window.addEventListener("load", do_sth ,false);
 
 function loadJSON(callback) {   
 	//get type of plugin and param
-	var type = sel_type();
+	//var type = sel_type();
 	//console.log(type[0] + " " + type[1]);
     var xobj = new XMLHttpRequest();
     	xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'data.json', true); 
+    xobj.open('GET', 'https://testforapi.github.io/test/site/data.json', true); 
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == "200") {
             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
@@ -142,7 +142,7 @@ function btn_getCode(){
 	the_parent.setAttribute("data-abs",the_abs_checkbox.checked);*/
 }
 
-/*function sel_type(){
+function sel_type(){
 	var the_sel = document.getElementById("104_dn_sel");
 	var the_param = document.getElementById("104_dn_param");
 	switch(the_sel.value){
@@ -163,4 +163,4 @@ function btn_getCode(){
 			the_param.value = "";
 	}
 	return [the_sel.value,the_param.value];
-}*/
+}
