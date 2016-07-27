@@ -2,7 +2,7 @@ window.addEventListener("load", do_sth ,false);
 
 function loadJSON(callback) {   
 	//get type of plugin and param
-	var type = sel_type();
+	//var type = sel_type();
 	//console.log(type[0] + " " + type[1]);
     var xobj = new XMLHttpRequest();
     	xobj.overrideMimeType("application/json");
