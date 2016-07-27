@@ -142,7 +142,7 @@ function btn_getCode(){
 	the_parent.setAttribute("data-abs",the_abs_checkbox.checked);*/
 }
 
-function sel_type(){
+/*function sel_type(){
 	var the_sel = document.getElementById("104_dn_sel");
 	var the_param = document.getElementById("104_dn_param");
 	switch(the_sel.value){
@@ -163,4 +163,4 @@ function sel_type(){
 			the_param.value = "";
 	}
 	return [the_sel.value,the_param.value];
-}
+}*/
