@@ -1,0 +1,26 @@
+body{
+	font-size: 16px;
+	background-color: black;
+}
+#nav-head{
+	border-radius: 0;
+
+}
+#menu-title{
+	color: white;
+	margin: 30px;
+}
+.row{
+	margin: 10px;
+}
+#chicken-menu, #beef-menu, #sushi-menu{
+	border: 2px solid white;
+	margin-bottom: 30px;
+	height: 1000px;
+	background-color: orange;
+	color: gray;
+}
+#chicken-menu div, #beef-menu div, #sushi-menu div{
+	font-size: 1.3em;
+	padding: 15px;
+}
